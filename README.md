@@ -1,4 +1,4 @@
-# Study-of-basic-gates
+### study-of-basic-gates
 
 **AIM:** 
 
@@ -63,33 +63,41 @@ Y= A⊕B
 
 
 **PROGRAM**
+```
+module logicgates(a, b, c1, c2, c3, c4, c5, c6, c7);  
+    input a, b;  
+    output c1, c2, c3, c4, c5, c6, c7;  
+    assign c1 = ~a;
+    assign c2 = a & b;
+    assign c3 = a | b;
+    assign c4 = ~(a & b);
+    assign c5 = ~(a | b);
+    assign c6 = a ^ b;
+    assign c7 = ~(a ^ b);
+endmodule
+```
+
+
+
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by:Markandeyan Gokul RegisterNumber: 212224240086
- ```
-assign c[0]= a & b;
-assign c[1]= a | b;
-assign c[2]= ~(a & b);
-assign c[3]= ~(a | b);
-assign c[4]= a ^ b;
-assign c[5]= ~(a ^ b);
-assign c[6]= ~ a;
-```
+Developed by: Markandeyan Gokul
+Register No: 212224240086
  
 **Logic symbol & Truthtable**
+![Screenshot 2024-11-11 093525](https://github.com/user-attachments/assets/44ec8af1-7901-409f-90f7-b08a0bf12135)
 
-![image](https://github.com/user-attachments/assets/f96b2c77-8f65-4c7d-87db-8684c6f6c411)
 
 
 **RTL realization Output:** 
 
-![image](https://github.com/user-attachments/assets/b169524c-42a6-4da3-9266-d4857a629f2a)
+![Screenshot 2024-11-11 082549](https://github.com/user-attachments/assets/63abb129-10aa-466e-b2f0-c9be70144b81)
 
 
 **RTL**
+![Screenshot (5)](https://github.com/user-attachments/assets/abcc8092-7cf7-4e99-a2da-d93e0e0c07c2)
+**Result:**
+Thus the different digital IC's are studied and truthtable for different logic gates are verified
 
-![436476728-b0803d70-8437-4c92-9c4f-e258f0aa9e44](https://github.com/user-attachments/assets/f99bfeed-934a-4b5f-a075-2e47ad021a84)
 
-## Result
-Thus the outputs of Basic Logic Gates are verified by simulating and synthesizing the VERILOG code.
